@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom 3</title>
+</head>
+<body>
+    <a href="#" onclick="aksi('Show', 'text');">Show</a>
+    <a href="#" onclick="aksi('Hide', 'text')">Hide</a>
+
+    <p id="text" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate enim fuga non perspiciatis nostrum ea, praesentium libero officiis suscipit voluptatibus nam, minus ut. Illo suscipit recusandae repellat! Explicabo, veritatis culpa.</p>
+    <script>
+        function aksi(aksi, id){
+            if(aksi === "Show"){
+                document.getElementById(id).style.display = "block";
+            }else if(aksi === "Hide"){
+                document.getElementById(id).style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
